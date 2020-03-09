@@ -1,0 +1,31 @@
+@import "../template.scss";
+
+.nav-bar {
+  .navbar-inner {
+    @include flex(row, space-around);
+
+    .logo {
+      height: 50px;
+      img {
+        width: 60px;
+        height: 100%;
+        border-radius: 7px;
+      }
+    }
+    .app-name {
+      margin-top: -13px;
+      font-family: "Pacifico", cursive;
+      font-size: 30px;
+      color: white;
+    }
+    .cart {
+      background-color: none;
+      cursor: pointer;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 7px;
+      }
+    }
+  }
+}
